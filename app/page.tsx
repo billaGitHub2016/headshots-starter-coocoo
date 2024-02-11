@@ -12,15 +12,17 @@ import PricingSection from "@/components/PricingSection";
 export const dynamic = "force-dynamic";
 
 export default async function Index() {
-  const supabase = createServerComponentClient({ cookies });
+  // const supabase = createServerComponentClient({ cookies });
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // const {
+  //   data: { user },
+  // } = await supabase.auth.getUser();
 
-  if (user) {
-    return redirect("/overview");
-  }
+  // if (user) {
+  //   return redirect("/overview");
+  // }
+
+  return redirect('/home');
 
   return (
     <div className="flex flex-col items-center pt-16">

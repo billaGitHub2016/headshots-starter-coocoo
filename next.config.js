@@ -3,6 +3,7 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  // transpilePackages: [ "antd", "@ant-design"],
 }
 
 module.exports = nextConfig
